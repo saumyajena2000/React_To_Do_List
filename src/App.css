@@ -1,42 +1,86 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.to-do-list {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  margin-top: 50px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.add-button {
+  background-color: hsl(125, 47%, 54%);
 }
 
-.card {
-  padding: 2em;
+.add-button:hover {
+  background-color: hsl(125, 47%, 44%);
 }
 
-.read-the-docs {
-  color: #888;
+.delete-button {
+  background-color: hsl(10, 90%, 50%);
+  margin-left: 10px;
+}
+
+.delete-button:hover {
+  background-color: hsl(10, 90%, 40%);
+}
+
+.move-button {
+  background-color: hsl(207, 90%, 64%);
+}
+
+.move-button:hover {
+  background-color: hsl(207, 90%, 54%);
+}
+
+input[type="text"] {
+  font-size: 1.4rem;
+  padding: 10px;
+  border: 2px solid hsla(0, 0%, 80%, 0.5);
+  border-radius: 5px;
+  color: hsla(0, 0%, 0%, 0.8);
+  margin-right: 10px;
+  width: 70%;
+}
+
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%, 94%);
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 85%, 0.75);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  flex: 1;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: grey;
 }
